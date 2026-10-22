@@ -140,10 +140,6 @@ aftercart-v0.5.0/
 - Purchases and service cases are local sample data. There is no real retailer integration. Warranty and return dates are illustrative, not a retailer decision or guarantee of coverage.
 - This is a local hackathon prototype, not an authenticated multi-user production service. Do not put personal order details into it.
 
-## Before submission
-
-Test the complete flow on the machine used to record the demo. The Alexa+ hackathon rules call for a working MCP server on Streamable HTTP (specification version 2025-11-25 or later) or a clearly identified simulated Alexa+ experience. Record the MCP endpoint and tool calls in the demo. Publish/share the repository according to the current Devpost submission instructions, include the required license if public, and provide honest tool feedback and any real friction logs.
-
 
 ## Design system
 
