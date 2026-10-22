@@ -1,0 +1,30 @@
+{
+  "name": "aftercart",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "description": "AfterCart \u2014 MCP-verified post-purchase workflows using Streamable HTTP, seeded demo records, and a signature product experience.",
+  "scripts": {
+    "dev": "concurrently -k -n SERVER,WEB -c cyan,magenta \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "reset:demo": "node scripts/reset-demo.js",
+    "test": "node --test",
+    "verify:mcp": "node scripts/verify-mcp.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "vite": "^7.1.0"
+  }
+}
